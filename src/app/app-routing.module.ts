@@ -33,7 +33,7 @@ import { VisualbasicComponent } from './visualbasic/visualbasic.component';
 const routes: Routes = [
 { path: 'abap', component: AbapComponent },
   { path: 'ada', component: AdaComponent },
-  { path: 'cc++', component: CcComponent },
+  { path: 'cc', component: CcComponent },
   { path: 'cobol', component: CobolComponent },
   { path: 'csharp', component: CsharpComponent },
   { path: 'dart', component: DartComponent },
