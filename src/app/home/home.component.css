@@ -29,5 +29,37 @@ a {
 	color: #e5813a;
 }
 .graphic{
-	text-align: center;
+	width: 1000px;
+  	height: 150px;
+	object-fit: cover;
+	margin-left:200px;
+	margin-top: 20px;
+}
+.fit {
+/*  width: 660px;
+  height: 300px;*/
+  padding-top: 0px;
+  padding-bottom: 50px;
+  object-fit: cover;
+}
+.blurb{
+	padding-top:12px;
+}
+.parname{
+ padding-top:235px;
+ color:#e5813a;
+}
+.fit-2{
+	margin: 40px;
+  object-fit: cover
+
+}
+.parname-1{
+	padding-top:35px;
+ color:#e5813a;
+}
+.blurb-1{
+	padding-top:12px;
+	padding-left:70px;
+	padding-right: 70px;
 }
