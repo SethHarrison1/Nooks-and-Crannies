@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-swift',
   templateUrl: './swift.component.html',
-  styleUrls: ['./swift.component.css']
+  styleUrls: ['./swift.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
-export class SwiftComponent implements OnInit {
+export class SwiftComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
-  ngOnInit(): void {
+  
+  ngOnInit() {
+    document.body.classList.add('swift-body');
+    // OR you can Add inline style css with the help of code below
+    // this._document.body.style.background = '#fff';
+}
+  ngOnDestroy() {
+    // remove the class form body tag
+    document.body.classList.add('swift-body');
   }
 
 }
+

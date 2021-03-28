@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-python',
   templateUrl: './python.component.html',
-  styleUrls: ['./python.component.css']
+  styleUrls: ['./python.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
-export class PythonComponent implements OnInit {
+export class PythonComponent implements OnInit, OnDestroy {
 
   constructor() { }
 
-  ngOnInit(): void {
+  
+  ngOnInit() {
+    document.body.classList.add('python-body');
+    // OR you can Add inline style css with the help of code below
+    // this._document.body.style.background = '#fff';
+}
+  ngOnDestroy() {
+    // remove the class form body tag
+    document.body.classList.add('python-body');
   }
 
 }
