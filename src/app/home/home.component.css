@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+.home-body{
+background-color: #f4f1e9;
+font-family: 'Tenor Sans', sans-serif;
+}
 a {
-	color: black;
+	color: #30424a;
 	text-decoration: none;
 	margin: 10px;
+	padding-top: 10px;
 }
 
+.welcome{
+	text-align: center;
+	padding: 5px;
+	border-bottom: 3px solid #e5813a;
+}
 .link {
 	width: 100%;
-	background-color: white;
 	margin: 10px;
 	text-align: center;
 }
 
-.link:hover {
-	background-color: white;
+.link :hover{
+	border-bottom: 1px solid #e5813a ;
+}
+.link a:hover {
+	color: #e5813a;
+}
+.graphic{
+	text-align: center;
 }
